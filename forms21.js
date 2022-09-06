@@ -1,6 +1,7 @@
+const btn = document.querySelector('button');
 const form = document.querySelector('form');
 
-form.addEventListener('submit', function(event){
+btn.onclick = function(event){
     event.preventDefault();
 
 fetch ("https://httpbin.org/post",
@@ -16,4 +17,4 @@ fetch ("https://httpbin.org/post",
         console.log(kotik);
     })
     .catch(error => console.log(error));
-})
+}
