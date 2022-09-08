@@ -8,9 +8,9 @@ fetch ("https://httpbin.org/post",
     {
     method: 'POST',    
     body: new FormData(form),
-    headers: {
-        "Content-Type": "application/x-xxx-form-urlcoded; charset=utf-8"
-        },
+    // headers: {
+    //     "Content-Type": "application/x-xxx-form-urlcoded; charset=utf-8"
+    //     },
     })
     .then(response => response.json())
     .then(kotik => {
